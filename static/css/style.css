@@ -1,0 +1,25 @@
+.info {
+    font-size: 3rem;
+    border: 2px solid black;
+    margin: 10px 0;
+    padding:10px;
+    text-align: center;
+}
+
+.info.flash {
+    animation: yellow-fade 0.5s;
+}
+
+.info.error {
+    background: orange;
+}
+
+
+@keyframes yellow-fade {
+    from {
+        background: #efff00;
+    }
+    to {
+        background: #fff;
+    }
+}
