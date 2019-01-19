@@ -20,7 +20,7 @@ To run:
 
 * Enjoy: <http://localhost:8989/>
 
-# Websockets Demo
+# Websockets Demo (asyncio & aiohttp)
 
 To run:
 
@@ -34,3 +34,22 @@ To run:
         python websockets_server.py
 
 * Enjoy: <http://localhost:8080/>
+
+# Websockets Demo (pubsub & requests)
+
+This demo launches a websocket based pubsub server which allows pushing new content via websockets while using regular python code (without asyncio).   To run:
+
+
+* Install aiohttp:
+
+        pip3 install aiohttp
+
+* Run the pubsubserver:
+
+        python websockets_pubsub.py
+
+* Connect subscribers (signs) via: <http://localhost:8080/>
+
+* POST to http://localhost:8080/publish/ to post new content.  For a demo refer to [publish.py](./publish.py):
+
+        python publish.py
